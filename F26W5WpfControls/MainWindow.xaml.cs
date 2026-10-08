@@ -20,5 +20,18 @@ namespace F26W5WpfControls
         {
             InitializeComponent();
         }
+
+        private void btnGetHobbies_Click(object sender, RoutedEventArgs e)
+        {
+            string hobbies = "";
+
+            foreach (CheckBox chk in spHobbies.Children.OfType<CheckBox>())
+            {
+                if (chk.IsChecked == true)
+                    hobbies += chk.Content + "\n";
+            }
+
+            lblOutput.Content = hobbies;
+        }
     }
 }
