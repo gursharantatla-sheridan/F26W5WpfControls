@@ -42,5 +42,12 @@
             <ComboBoxItem Content="Tokyo"/>
         </ComboBox>
         <Button x:Name="btnGetCity" Content="Get City" Canvas.Left="595" Canvas.Top="43" Height="27" Width="77" Click="btnGetCity_Click"/>
+        
+        <ListBox x:Name="lstCountries" Height="161" Width="149" Canvas.Left="381" Canvas.Top="114" SelectionMode="Extended">
+            <ListBoxItem Content="Canada"/>
+            <ListBoxItem Content="England"/>
+            <ListBoxItem Content="Australia"/>
+            <ListBoxItem Content="Japan"/>
+        </ListBox>
     </Canvas>
 </Window>
