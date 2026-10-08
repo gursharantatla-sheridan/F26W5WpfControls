@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" FontSize="16" FontWeight="Bold">
     <Canvas>
-        <Canvas Height="136" Width="228" Canvas.Left="26" Canvas.Top="26" Background="#FFF9EFC1" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Canvas Height="72" Width="134" Canvas.Left="26" Canvas.Top="26" Background="#FFF9EFC1" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Button Content="Button 1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
             <Button Content="Button 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
         </Canvas>
+        <Image Height="79" Canvas.Left="177" Canvas.Top="19" Width="154" Source="/Car.png" HorizontalAlignment="Left" VerticalAlignment="Center"/>
     </Canvas>
 </Window>
