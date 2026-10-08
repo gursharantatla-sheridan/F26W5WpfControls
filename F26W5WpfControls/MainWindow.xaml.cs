@@ -33,5 +33,24 @@ namespace F26W5WpfControls
 
             lblOutput.Content = hobbies;
         }
+
+        private void btnGetGender_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedGender = spGender.Children.OfType<RadioButton>()
+                                                  .FirstOrDefault(r => r.IsChecked == true);
+
+            lblOutput.Content = selectedGender?.Content ?? "Select your gender";
+        }
+
+        private void btnGetCity_Click(object sender, RoutedEventArgs e)
+        {
+            lblOutput.Content = cmbCities.Text;
+        }
+
+        private void cmbCities_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //lblOutput.Content = cmbCities.Text;
+            lblOutput.Content = ((ComboBoxItem)cmbCities.SelectedItem).Content;
+        }
     }
 }

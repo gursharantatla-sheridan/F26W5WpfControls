@@ -31,6 +31,16 @@
                 <RadioButton Content="Other" Margin="5"/>
             </StackPanel>
         </GroupBox>
-        <Button x:Name="btnGetGender" Content="Get Gender" Canvas.Left="208" Canvas.Top="304" Height="32" Width="123" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button x:Name="btnGetGender" Content="Get Gender" Canvas.Left="208" Canvas.Top="304" Height="32" Width="123" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnGetGender_Click"/>
+        <Label Content="Cities" Canvas.Left="414" Canvas.Top="39"/>
+
+        <ComboBox x:Name="cmbCities" Canvas.Left="470" Canvas.Top="43" Width="120" SelectionChanged="cmbCities_SelectionChanged">
+            <ComboBoxItem Content="Toronto"/>
+            <ComboBoxItem Content="London"/>
+            <ComboBoxItem Content="Sydney"/>
+            <ComboBoxItem Content="Cape Town"/>
+            <ComboBoxItem Content="Tokyo"/>
+        </ComboBox>
+        <Button x:Name="btnGetCity" Content="Get City" Canvas.Left="595" Canvas.Top="43" Height="27" Width="77" Click="btnGetCity_Click"/>
     </Canvas>
 </Window>
